@@ -75,8 +75,11 @@ nav {
 
 nav a {
   text-decoration: none;
-  padding-right: 2rem;
   color: white;
+}
+
+nav span {
+    padding-right: 2rem;
 }
 
 .navsmall {
@@ -88,7 +91,6 @@ nav a {
 }
 
 .sloganbox {
-  width: 960px;
   display: flex;
   justify-content: flex-end;
 }
@@ -126,12 +128,17 @@ main {
 
 .icon img {
   width: 100%;
+  max-width: 6rem;
   height: auto;
 }
 
 .paper img {
   width: 3.5rem;
   height: auto;
+}
+
+.truck {
+  margin-right: 0px;
 }
 
 .topics {
@@ -170,4 +177,104 @@ footer div {
 footer img {
   height: 1.5rem;
   margin: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width: 1047px) {
+  header {
+    height: 22rem;
+    background-position: left;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .bande {
+    margin: 0rem 0rem 5rem 0rem;
+  }
+
+  .slogan {
+    margin: 0px;
+  }
+
+  .sloganbox h1 {
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+  .bande {
+    margin: 0rem 0rem 14rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .navlarge {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navlarge span {
+    padding-bottom: 5px;
+  }
+
+  .sloganbox h1 {
+    width: 100%;
+    margin: 0rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .navlarge {
+    display: none;
+  }
+
+  .navsmall {
+    display: block;
+  }
+
+  main {
+    margin-bottom: 0rem;
+  }
+
+  .icons {
+    height: auto;
+  }
+
+  .icon {
+    width: 100%;
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .topic {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .topic h4 {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer div {
+    justify-content: center;
+  }
 }
